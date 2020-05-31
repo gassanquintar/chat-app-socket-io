@@ -1,8 +1,8 @@
 # Chat App
-
+Chat application using Node.js
 ## Project features
 
-* Real-time Web Applications with Socket.io
+* Real-time Web Applications based on Node.JS web framework express and Socket.io library
 * Real time data transfer
 
 ## Prerequisites
