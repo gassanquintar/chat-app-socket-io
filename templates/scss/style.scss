@@ -1,0 +1,77 @@
+@import 'variables/variables';
+@import 'utils/util';
+
+
+// Config
+@import "variables/variables";
+@import "functions/*";
+@import "mixins/*";
+ 
+
+ 
+// General DOM selector styles
+@import "base/*";
+ 
+// Fonts & General Type Styling
+@import "typography/*";
+ 
+ 
+// Atomic Design
+@import "atoms/**/*";
+@import "molecules/**/*";
+@import "organisms/**/*";
+@import "templates/**/*";
+@import "pages/**/*";
+ 
+// General UI Helpers
+@import "utils/*";
+
+body {
+  font: 100% $font-roboto;
+  padding-top: 40px;
+  padding-bottom: 41px;
+  background-color: $grey00;
+}
+
+*:focus {
+  outline: none;
+}
+
+.form-login {
+  background-color: $white;  
+  border: 1px solid $grey01;
+
+  padding: 20px;  
+  max-width: 300px;
+}
+
+.input-wrap {
+  border-bottom: 2px solid $grey01;
+  margin-bottom: 20px;
+}
+
+.input-login {
+  border: 0px;
+  height: 50px;
+  font-size: 20px;
+}
+.btn-form-login {
+  background-color: $green;
+  border: 0px;
+  // border-radius: 5px;
+  color: $white;
+  font-size: 16px;
+  margin: 15px auto;
+  height: 50px;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.form-login-avatar{
+  border-radius: 50%;
+  display: block;
+  height: 120px;
+  margin: 0px auto 30px;
+  overflow: hidden;
+  width: 120px;
+}

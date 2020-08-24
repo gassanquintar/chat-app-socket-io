@@ -26,8 +26,28 @@ const server = http.createServer(app);
  */
 const io = socketio(server)
 
-io.on('connection', () => {
-  console.log('New Socket.io connection')
+let count = 0
+// const message = 
+
+io.on('connection', (socket) => {
+    console.log('New Socket.io connection')
+
+    // socket.emit('countUpdated', count)
+
+    // socket.on('increment', () => {
+    //     count++
+    //     io.emit('countUpdated', count)
+    // })
+
+    // socket.emit('message', 'Welcome amiguito!!')
+
+    socket.on('SendMessage', (message) => {
+      console.log(message)
+      io.emit('message', message)
+    })
+    
+
+    
 })
 /**
  * Listen on provided port, on all network interfaces.
